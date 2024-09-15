@@ -42,4 +42,5 @@
   .desenfocado {
     filter: blur(10px);
   }
+  
   </style>  

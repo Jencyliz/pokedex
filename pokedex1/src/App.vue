@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <img src=".assets/img/be5185a1fd0db1dfeb4c71610c19d6af.png">
+    <img src="./assets/img/be5185a1fd0db1dfeb4c71610c19d6af.png">
     <h1>¿Quién es ese Pokémon?</h1>
     <p>Pokemones descubiertos: {{ contadorDescubiertos }}</p>
     <div class="pokemon-grid">
@@ -19,6 +19,9 @@ import axios from 'axios';
 import CartaPokemon from './components/CartaPokemon.vue';
 
 export default {
+  components: {
+    CartaPokemon,
+  },
   data() {
     return {
       pokemones: [],
@@ -49,9 +52,15 @@ export default {
 </script>
 
 <style>
-.pokemon-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.app {
+  text-align: center;
 }
+.pokemon-grid {display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 20px; 
+  justify-items: center; 
+  align-items: center; 
+  margin: 0 auto;
+  max-width: 1200px; }
+
 </style>
