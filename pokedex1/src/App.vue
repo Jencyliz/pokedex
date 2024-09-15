@@ -1,5 +1,6 @@
 <template>
   <div class="app">
+    <img src=".assets/img/be5185a1fd0db1dfeb4c71610c19d6af.png">
     <h1>¿Quién es ese Pokémon?</h1>
     <p>Pokemones descubiertos: {{ contadorDescubiertos }}</p>
     <div class="pokemon-grid">
